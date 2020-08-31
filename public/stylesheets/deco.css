@@ -1,0 +1,458 @@
+	*{
+		scroll-behavior: smooth;
+		font-size:20px;
+		font-family: 'Schoolbell', cursive;
+		/*
+		font-family: gooddog;
+		font-family: 'Ubuntu', sans-serif;
+		font-family: 'Schoolbell', cursive;
+
+		font-family: 'Comfortaa', cursive;
+		font-family: 'Catamaran', sans-serif;
+
+		font-family: 'Delius', cursive;
+
+		font-family: 'Bubblegum Sans', cursive;
+
+		font-family: 'Open Sans', sans-serif;
+
+		font-family: 'Ubuntu Condensed', sans-serif;
+		*/
+		color: #494949;
+		/*
+		#2EC4B6 - skyblue
+		#fcedb1 - yellow
+		#ef5285 - pink
+
+		*/
+	}
+	@font-face{
+	            font-family: gooddog;
+	            src : url(../font/gooddog.ttf);
+	 }
+	 @font-face{
+	            font-family: bubble;
+	            src : url(../font/the_bubble_letters.ttf);
+	 }
+	body{
+
+		width:70%;
+		margin : 5% auto 0 auto;
+		background: #30b5a8;	/*color : skyblue*/
+		position:relative;
+		top:30px;
+	}
+	h1{
+		font-family: bubble;
+		font-size:1.5rem;
+		color: #fcedb1;
+	}
+	#title_image{
+		width:410px;
+		/*width:27vw;*/
+	}
+	#main-image{
+		text-align: center;
+	}
+
+	.nav_photo{
+		width:80px;
+	}
+	#navbar{
+		width:70%;
+		height:25%;
+		position:fixed;
+		background: #30b5a8;
+		border-bottom: 0.3vw solid #fcedb1;
+		z-index: 999;
+		top:0;
+		padding : 20px 0 40px 0;
+
+	}
+	article div h1{
+		text-align: center;
+	}
+	#Maps {
+		text-align: center;
+	}
+	#Maps img{
+		width:65vw;
+	}
+	#Maps .flag_mark{
+		position:absolute;
+		width:4vw;
+		z-index: 100;
+	}
+	#Maps .Map_img{
+		position:relative;
+	}
+
+	/*this is the location of flag*/
+	#Maps .Map_img .flag_img #korea{
+		top:9vw;
+		left:52.5vw;
+	}
+	#Maps .Map_img .flag_img #japan{
+		top:8vw;
+		left:55.5vw;
+	}
+	#Maps .Map_img .flag_img #taiwan{
+		top: 11.5vw;
+    	left: 51.5vw;
+	}
+	#Maps .Map_img .flag_img #nepal{
+		top: 11vw;
+    	left: 45vw;
+	}
+	#Maps .Map_img .flag_img #mongol{
+		top: 7vw;
+    	left: 48vw;
+	}
+	#Maps .Map_img .flag_img #singapore{
+		top: 17vw;
+    	left: 49vw;
+	}
+	#Maps .Map_img .flag_img #malay{
+		top: 15vw;
+    	left: 48vw;
+	}
+	#Maps .Map_img .flag_img #australia{
+		top: 24.5vw;
+    	left: 55.5vw;
+	}
+	#Maps .small_description{
+		position:relative;
+	}
+	#Maps .small_description img{
+		position:absolute;
+		left:0vw;
+	}
+	#Maps .small_description p{
+		position:absolute;
+		left:2vw;
+	}
+	#Maps .Map_img .flag_img:hover p{
+		visibility: visible;
+	}
+	#Maps .Map_img .flag_img p{
+		visibility: hidden;
+		background: none;
+		position: absolute;
+		margin:0;
+		z-index: 1000;
+	}
+	#Journey{
+		text-align: center;
+		/*position:relative;*/
+	}
+	#Journey .journey_image{
+		position:relative;
+
+	}
+	#Journey #journey_icon{
+		position:absolute;
+		/*margin-top:2vw;*/
+		left:14vw;
+		top:4.5vw;
+	}
+	#Journey p{
+		padding:0;
+		margin:0;
+		font-size: 0.9rem;
+
+	}
+	.blinkEle {
+	  animation: blinker 1.2s linear infinite;
+	}
+
+	@keyframes blinker {
+	  50% {
+	    opacity: 0;
+	  }
+	}
+	#Journey #road{
+		width:65vw;
+		height:3vw;
+		position:absolute;
+		left:0vw;
+		top:7.3vw;
+	}
+	#Journey #moving_person{
+		width:8vw;
+		position:absolute;
+		left:5vw;
+	}
+	#Journey #journey_icon img{
+		width:5vw;
+		cursor:pointer;
+		/*position:absolute;*/
+	}
+
+	#Journey .album{
+		width:90%;
+		height:100vh;
+		display:none;
+		padding-top:11vw;
+
+	}
+
+	#Journey ul {
+		  padding:0 0 0 0;
+		  margin:2vw 0 0 0;
+		}
+	#Journey ul li {
+		  list-style:none;
+		  margin-bottom:3vw;
+		}
+	#Journey ul li img {
+		  cursor: pointer;
+		  width:10vw;
+		}
+
+	/*color:#ef5285; This is pink color*/
+	/*This is the end of flag's location*/
+	#navbar a img{
+		transition: transform .2s;
+	}
+	#navbar a img:hover{
+		transform: scale(1.2);
+	}
+	#navbar a:hover p{
+		visibility: visible;
+	}
+	#navbar a p{
+		visibility: hidden;
+		color : #fcedb1;
+		font-family: bubble;
+		position:relative;
+		top : -7vw;
+		/*color:#ef5285; This is pink color*/
+	}
+	#main-image img{
+		width:60vw;
+	}
+	#navbar #title_logo{
+		width:48%;
+		padding-top: 0;
+	}
+	#navbar a{
+		display:block;
+		float:left;
+		width:13%;
+		height:100%;
+		text-align: center;
+		text-decoration: none;
+		padding-top: 50px;
+
+	}
+	article{
+		position:absolute;
+		/*top:200px;*/
+		top:10vw;
+		width:100%;
+		text-align: justify;
+		word-spacing: 3px;
+		line-height: 2em;
+		font-size: 1em;
+		color:#333;
+	}
+	#main-image{
+		padding-top:0;
+		position : relative;
+	}
+	#main-image .front{ /*main image*/
+		position : absolute;
+		top:5vw;
+	}
+	#main-image .back{ /*cloud and star*/
+		position : absolute;
+		top:-9vw;
+	}
+	.common{
+		height:70vw;
+		padding : 20px;
+		padding-top: 15vw;
+		/*margin-bottom: 10px;*/
+	}
+	.common p{
+		color: #494949;
+		padding : 1vw;
+	}
+	#intro h1{
+		padding-bottom: 2vw;
+	}
+	#intro #paragraph{
+		padding: 2vw 2vw 1vw 2vw;
+		transition: background 0.3s ease-in-out;
+		border-radius: 1vw;
+		text-indent: 1rem;
+
+	}
+	#intro #paragraph:hover{
+		background:rgb(252,237,177);
+	}
+	#intro #paragraph p{
+		margin-bottom: 1px;
+		padding:0;
+	}
+
+	#map {
+	        height: 400px;  /* The height is 400 pixels */
+	        width: 100%;  /* The width is the width of the web page */
+	  }
+	#About-me{
+		text-align: center;
+		margin-top:15vw;
+	}
+	#About-me img{
+		width:9vw;
+		/*margin-top: 1vw;*/
+		/*margin-bottom: 1vw;*/
+	}
+	#About-me p {
+		width:25vw;
+		background: #fcedb1;
+		border-radius: 3vw;
+		text-align: justify;
+		padding-left:2vw;
+		font-size: 0.9rem;
+	}
+	#About-me #small{
+		font-size: 0.8rem;
+		background:no-repeat;
+		text-align:center;
+		margin-bottom: 1vw;
+		padding:0;
+		line-height: 1rem;
+	}
+
+	 /*	responsive for tablets and mobiles*/
+	 /************* 1. tablets ************/
+	@media screen and (max-width: 1100px) {
+		*{
+			font-size : 12px;
+		}
+		article{
+			top : 13vw;
+		}
+		#title_image{
+			width:300px;
+		}
+		#navbar #title_logo{
+			width:60%;
+			padding-top: 0;
+		}
+		.nav_photo{
+			width:50px;
+		}
+		#navbar a{
+			width:10%;
+			height:100%;
+			padding-top: 40px;
+		}
+		#navbar a p{
+			/*top : -7vw;*/
+			font-size: 0.7rem;
+		}
+		#navbar{
+			padding-bottom: 15px ;
+			height:20%;
+			/*border-bottom: 3px dashed #fcedb1;*/
+		}
+		#main-image{
+			padding-top:0;
+
+		}
+		.common{
+			padding-top: 25vw;
+		}
+		#About-me{
+			margin-top:25vw;
+		}
+		#About-me p {
+			width:27vw;
+		}
+	}
+	@media screen and (max-width: 800px) {
+			article{
+				top:16vw;
+			}
+			#title_image{
+				width:230px;
+			}
+			#title_logo{
+				margin-top:10px;
+			}
+			#navbar a p{
+				top : -9vw;
+				font-size: 0.6rem;
+			}
+			#About-me{
+				margin-top:40vw;
+			}
+		}
+	  /************* 2. mobiles  ************/
+	 @media screen and (max-width: 500px) {
+	 	*{
+			font-size : 7px;
+		}
+		#title_image{
+			width:155px;
+		}
+		#navbar #title_logo{
+			width:60%;
+			padding-top: 0;
+			margin-top: 0;
+		}
+		.nav_photo{
+			width:30px;
+		}
+		#navbar a{
+			width:10%;
+			height:100%;
+			padding-top: 20px;
+		}
+		#navbar a p{
+			top : -11vw;
+			font-size: 0.4rem;
+		}
+		#navbar{
+			padding-bottom: 0px ;
+			height:12%;
+			/*border-bottom: 2px dashed #fcedb1;*/
+		}
+		article{
+			top:14vw;
+		}
+		#About-me p {
+			width:35vw;
+		}
+		#Maps .Map_img{
+			position:relative;
+			left:-3vw;
+		}
+		#main-image{
+		padding-top:0;
+		}
+		.common{
+			padding-top: 20vw;
+		}
+		#About-me{
+			margin-top:42vw;
+		}
+		#Journey #journey_icon img{
+			width:4vw;
+		}
+		#Journey #journey_icon{
+
+			left:14vw;
+			top:4.8vw;
+		}
+		#Journey #road{
+			width:60vw;
+			height:2vw;
+			position:absolute;
+		/*	left:0vw;
+			top:7.3vw;*/
+		}
+	}

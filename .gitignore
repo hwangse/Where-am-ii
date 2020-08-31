@@ -1,0 +1,11 @@
+.idea/
+node_modules/
+.firebaserc
+.firebase
+.DS_Store
+public/.DS_Store
+firebase-debug.log
+public/albums/*
+public/images/*
+public/font/*
+

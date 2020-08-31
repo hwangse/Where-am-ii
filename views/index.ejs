@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Where am I?</title>
+    <!-- this is needed for the browser to deal with responsive issues -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/deco.css">
+    <link href="https://fonts.googleapis.com/css?family=Neucha|Schoolbell|Ubuntu|Catamaran|Comfortaa|Delius|Bubblegum+Sans|Open+Sans:600|Ubuntu+Condensed" rel="stylesheet">
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div id="wrapper">
+    <nav>
+        <div id="navbar">
+            <a href="#intro">
+                <img src="./images/home.png" class="nav_photo">
+                <p class="img_caption">Intro</p>
+            </a>
+            <a href="#Maps">
+                <img src="./images/earth2.png" class="nav_photo">
+                <p class="img_caption">Maps</p>
+            </a>
+            <a href="#top" id="title_logo"><img src="./images/title_logo_picto2.png" id="title_image" class="nav_photo"/></a>
+            <a href="#Journey">
+                <img src="./images/flag2.png" class="nav_photo">
+                <p class="img_caption">Journey</p>
+            </a>
+            <a href="#About-me">
+                <img src="./images/user.png" class="nav_photo">
+                <p class="img_caption">About me</p>
+            </a>
+        </div>
+    </nav>
+    <article>
+        <div class="common" id="main-image">
+            <div class="back"><img id="moving_img" src="./images/cloud_moving.gif" /></div>
+            <div class="front"><img src="./images/main_moving.gif" /></div>
+        </div>
+        <div class="common" id="intro">
+            <h1>Intro</h1>
+            <div id="paragraph">
+                <p>
+
+                    This web page functions as a travel album. The title <span style="color:#2EC4B6;">"Where am I?"</span> means
+                    "Which country I am?" from my past point of view.
+                    The website is made up of five pages and you can see the main image by clicking on the logo "Where am I?".
+                </p>
+                <p>
+                    The overall descriptions of this website are in the 'intro' part that you are currently watching.
+                    Secondly in the 'Maps' part I've displayed the world map and marked the visited country with <span style="color:#ef5285;">'flag icon'</span>.
+                    On the third part 'Journey' are the photos of each countries. It is a kind of travel album.
+                    Finally, on the last part 'about me', you can see the brief description of the website producer.
+                </p>
+            </div>
+
+
+        </div>
+        <div class="common" id="Maps">
+            <h1>Maps</h1>
+            <div class="Map_img">
+                <img src="./images/worldmap.png" />
+                <div class="flag_img">
+                    <img src="./images/flag2_shadow.png" class="flag_mark" id="korea"/><p id="korea">KOREA</p>
+                </div>
+                <div class="flag_img">
+                    <img src="./images/flag2_shadow.png" class="flag_mark" id="japan"/><p id="japan">JAPAN</p>
+                </div>
+                <div class="flag_img">
+                    <img src="./images/flag2_shadow.png" class="flag_mark" id="taiwan"/><p id="taiwan">TAIWAN</p>
+                </div>
+                <div class="flag_img">
+                    <img src="./images/flag2_shadow.png" class="flag_mark" id="nepal"/><p id="nepal">NEPAL</p>
+                </div>
+                <div class="flag_img">
+                    <img src="./images/flag2_shadow.png" class="flag_mark" id="mongol"/><p id="mongol">MONGOLIA</p>
+                </div>
+                <div class="flag_img">
+                    <img src="./images/flag2_shadow.png" class="flag_mark" id="singapore"/><p id="singapore">SINGAPORE</p>
+                </div>
+                <div class="flag_img">
+                    <img src="./images/flag2_shadow.png" class="flag_mark" id="malay"/><p id="malay">MALAYSIA</p>
+                </div>
+                <div class="flag_img">
+                    <img src="./images/flag2_shadow.png" class="flag_mark" id="australia"/><p id="australia">AUSTRALIA</p>
+                </div>
+            </div>
+            <div class="small_description">
+                <img src="./images/flag2.png" class="flag_mark" id="des">
+                <p> : The country where I had been</p>
+            </div>
+        </div>
+
+        <div class="common" id="Journey">
+            <h1>Journey</h1>
+            <p class="blinkEle">click each flags!</p>
+            <div class="journey_image">
+                <img src="./images/person.png" id="moving_person">
+
+                <div id="journey_icon">
+                    <img src="./images/flag2.png" id="first_flag">
+                    <img src="./images/flag2.png">
+                    <img src="./images/flag2.png">
+                    <img src="./images/flag2.png">
+                    <img src="./images/flag2.png">
+                    <img src="./images/flag2.png">
+                    <img src="./images/flag2.png">
+                    <img src="./images/flag2.png">
+                </div>
+
+                <img src="./images/road.png" id="road">
+            </div>
+
+            <center>
+                <div class="album">
+                    2016 - Korea
+                    <ul class="row first">
+                        <script type="text/javascript">
+                            for(var i=1;i<=20;i++){
+                                document.write("<li><img alt='' src='./albums/kor/"+i+".jpg'></li>");
+                            }
+                        </script>
+                    </ul>
+                </div>
+                <div class="album">
+                    2017 - Taiwan
+                    <ul class="row first">
+                        <script type="text/javascript">
+                            for(var i=1;i<=20;i++){
+                                document.write("<li><img alt='' src='./albums/tai/"+i+".jpg'></li>");
+                            }
+                        </script>
+                    </ul>
+                </div>
+                <div class="album">
+                    2017 - Japan
+                    <ul class="row first">
+                        <script type="text/javascript">
+                            for(var i=1;i<=20;i++){
+                                document.write("<li><img alt='' src='./albums/jap/"+i+".jpg'></li>");
+                            }
+                        </script>
+                    </ul>
+                </div>
+                <div class="album">
+                    2018 - Nepal
+                    <ul class="row first">
+                        <script type="text/javascript">
+                            for(var i=1;i<=20;i++){
+                                document.write("<li><img alt='' src='./albums/nep/"+i+".jpg'></li>");
+                            }
+                        </script>
+                    </ul>
+                </div>
+                <div class="album">
+                    2018 - Mongolia
+                    <ul class="row first">
+                        <script type="text/javascript">
+                            for(var i=1;i<=20;i++){
+                                document.write("<li><img alt='' src='./albums/mong/"+i+".jpg'></li>");
+                            }
+                        </script>
+                    </ul>
+                </div>
+                <div class="album">
+                    2018 - Singapore
+                    <ul class="row first">
+                        <script type="text/javascript">
+                            for(var i=1;i<=20;i++){
+                                document.write("<li><img alt='' src='./albums/sing/"+i+".jpg'></li>");
+                            }
+                        </script>
+                    </ul>
+                </div>
+
+                <div class="album">
+                    2019 - Malaysia
+                    <ul class="row first">
+                        <script type="text/javascript">
+                            for(var i=1;i<=20;i++){
+                                document.write("<li><img alt='' src='./albums/mal/"+i+".jpg'></li>");
+                            }
+                        </script>
+                    </ul>
+                </div>
+                <div class="album">
+                    2019 - Australia
+                    <ul class="row first">
+                        <script type="text/javascript">
+                            for(var i=1;i<=20;i++){
+                                document.write("<li><img alt='' src='./albums/aus/"+i+".jpg'></li>");
+                            }
+                        </script>
+                    </ul>
+                </div>
+            </center>
+        </div>
+
+
+        <div class="common" id="About-me">
+            <h1>About me</h1>
+            <img src="./images/hwangse-logo_trans.png">
+            <center>
+                <p id="small">
+                    Exploring the world<br/>
+                    with passion, composure, and vision
+                </p>
+                <p>
+                    Name : Sehyun Hwang<br/>
+                    School : Sogang University, Seoul, Korea<br/>
+                    Major : Computer Science & Engineering<br/>
+                    Email : sehyunny6@gmail.com<br/>
+                    Github : <a style="color:#30b5a8;"href="https://github.com/hwangse">https://github.com/hwangse</a><br/>
+                </p>
+            </center>
+
+        </div>
+    </article>
+</div>
+</body>
+
+<link rel="stylesheet" type="text/css" href="./plugin/jquery.bsPhotoGallery.css">
+<script type="text/javascript" src="./plugin/jquery.bsPhotoGallery.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+
+
+        $("#Journey #journey_icon img").click(function(){
+            var idx = $(this).index();
+
+            $("#Journey .album").css("display","none")
+                .eq(idx).css("display","block");
+
+            var first=(($(window).width())/100)*10;
+            var pos_icon = $(this).position(); // returns an object with the attribute top and left
+            var pos_person=$("#moving_person").position();
+
+            var diff=(pos_icon.left+first)-pos_person.left;
+            $("#moving_person").animate({left: "+="+(diff)+"px"},500);
+
+        });
+
+        $('ul.first').bsPhotoGallery({
+            "classes" : "col-3 col-lg-3 col-md-3 col-sm-3",
+            "hasModal" : true,
+            "shortText" : false,
+            // "style:transform: rotate(90deg);"
+        });
+
+        $("#main-image").hover(function(){
+                $("body").css({
+                    transition : 'background 0.6s ease-in-out',
+                    "background" : "#160d48"});		//dark blue
+                $("#navbar").css({
+                    transition : 'background 0.6s ease-in-out',
+                    "background" : "#160d48"});
+
+                $('#moving_img').fadeOut(500, function() {
+                    $('#moving_img').attr("src", "./images/star_moving.gif");
+                    $('#moving_img').fadeIn(500);
+                });
+            },
+            function(){
+                $("body").css("background", "#30b5a8");		//sky blue
+                $("#navbar").css("background","#30b5a8");
+                $('#moving_img').fadeOut(500, function() {
+                    $('#moving_img').attr("src", "./images/cloud_moving.gif");
+                    $('#moving_img').fadeIn(500);
+                });
+            });
+    });
+
+
+
+
+
+</script>
+</html>
