@@ -17,6 +17,8 @@
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./public/images/favicon.ico">
 </head>
 <body>
 <div id="wrapper">
@@ -124,82 +126,42 @@
         <div class="album">
           2016 - Korea
           <ul class="row first">
-            <script type="text/javascript">
-              for(var i=1;i<=20;i++){
-                document.write("<li><img alt='' src='./public/albums/kor/"+i+".jpg'></li>");
-              }
-            </script>
           </ul>
         </div>
         <div class="album">
           2017 - Taiwan
           <ul class="row first">
-            <script type="text/javascript">
-              for(var i=1;i<=20;i++){
-                document.write("<li><img alt='' src='./public/albums/tai/"+i+".jpg'></li>");
-              }
-            </script>
           </ul>
         </div>
         <div class="album">
           2017 - Japan
           <ul class="row first">
-            <script type="text/javascript">
-              for(var i=1;i<=20;i++){
-                document.write("<li><img alt='' src='./public/albums/jap/"+i+".jpg'></li>");
-              }
-            </script>
           </ul>
         </div>
         <div class="album">
           2018 - Nepal
           <ul class="row first">
-            <script type="text/javascript">
-              for(var i=1;i<=20;i++){
-                document.write("<li><img alt='' src='./public/albums/nep/"+i+".jpg'></li>");
-              }
-            </script>
           </ul>
         </div>
         <div class="album">
           2018 - Mongolia
           <ul class="row first">
-            <script type="text/javascript">
-              for(var i=1;i<=20;i++){
-                document.write("<li><img alt='' src='./public/albums/mong/"+i+".jpg'></li>");
-              }
-            </script>
           </ul>
         </div>
         <div class="album">
           2018 - Singapore
           <ul class="row first">
-            <script type="text/javascript">
-              for(var i=1;i<=20;i++){
-                document.write("<li><img alt='' src='./public/albums/sing/"+i+".jpg'></li>");
-              }
-            </script>
           </ul>
         </div>
 
         <div class="album">
           2019 - Malaysia
           <ul class="row first">
-            <script type="text/javascript">
-              for(var i=1;i<=20;i++){
-                document.write("<li><img alt='' src='./public/albums/mal/"+i+".jpg'></li>");
-              }
-            </script>
           </ul>
         </div>
         <div class="album">
           2019 - Australia
           <ul class="row first">
-            <script type="text/javascript">
-              for(var i=1;i<=20;i++){
-                document.write("<li><img alt='' src='./public/albums/aus/"+i+".jpg'></li>");
-              }
-            </script>
           </ul>
         </div>
       </center>
@@ -231,14 +193,42 @@
 <link rel="stylesheet" type="text/css" href="./public/plugin/jquery.bsPhotoGallery.css">
 <script type="text/javascript" src="./public/plugin/jquery.bsPhotoGallery.js"></script>
 <script type="text/javascript">
+
+  function initializePhotoGallery() {
+    $('ul.first').bsPhotoGallery({
+      "classes" : "col-3 col-lg-3 col-md-3 col-sm-3",
+      "hasModal" : true,
+      "shortText" : false,
+      // "style:transform: rotate(90deg);"
+    });
+  };
+  initializePhotoGallery();
+
+  var nationMap = {
+    0: "kor",
+    1: "tai",
+    2: "jap",
+    3: "nep",
+    4: "mong",
+    5: "sing",
+    6: "mal",
+    7: "aus"
+  }
+
   $(document).ready(function(){
-
-
     $("#Journey #journey_icon img").click(function(){
       var idx = $(this).index();
 
       $("#Journey .album").css("display","none")
               .eq(idx).css("display","block");
+
+      var selected = $("#Journey .album").eq(idx);
+      var ul = $(selected).find("ul")
+      ul.empty();
+      for(var i=1;i<=20;i++){
+        ul.append("<li><img alt='' src='./public/albums/"+nationMap[idx]+"/"+i+".jpg'></li>");
+      }
+      initializePhotoGallery();
 
       var first=(($(window).width())/100)*10;
       var pos_icon = $(this).position(); // returns an object with the attribute top and left
