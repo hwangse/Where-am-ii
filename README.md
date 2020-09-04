@@ -1,8 +1,10 @@
 # Where-am-i
-#### [Where am I](https://where-am-i-d80b4.web.app/) is a personal website.
-> This web page functions as a travel album.
-> The title "Where am I?" means "Which country I am?" from my past point of view. 
-> The website is made up of five pages and you can see the main image by clicking on the logo "Where am I?". 
+#### [Where am I](https://where-am-i.ml/) is a personal website.
+> The web page functions as a photo album. <br>
+> The title `"Where am I?"` means "Which country I visited?" from the past point of view. 
+> The website is made up of five pages in one scroll.
+> You can see the main image changing(day to night) by hovering the mouse on it. 
+> Have a joyful time at my website. Thank you! 😸 
  
 <sup>ⓒ copyright of all images and logos are belongs to me.</sup>
 <br>
