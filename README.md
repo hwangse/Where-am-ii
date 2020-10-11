@@ -1,5 +1,5 @@
 # Where-am-i
-#### [Where am I](https://where-am-i.ml/) is a personal website.
+#### [Where am I](https://whereami.ml/) is a personal website.
 > The web page functions as a photo album. <br>
 > The title `"Where am I?"` means "Which country I visited?" from the past point of view. 
 > The website is made up of five pages in one scroll.
