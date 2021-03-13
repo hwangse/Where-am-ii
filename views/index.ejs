@@ -5,20 +5,21 @@
     <!-- this is needed for the browser to deal with responsive issues -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./stylesheets/deco.css">
+    <!-- font -->
     <link href="https://fonts.googleapis.com/css?family=Neucha|Schoolbell|Ubuntu|Catamaran|Comfortaa|Delius|Bubblegum+Sans|Open+Sans:600|Ubuntu+Condensed" rel="stylesheet">
-
     <!-- jQuery library -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
     <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-
     <!-- favicon -->
     <link rel="shortcut icon" href="./images/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="./plugin/jquery.bsPhotoGallery.css">
+    <script type="text/javascript" src="./plugin/jquery.bsPhotoGallery.js"></script>
+    <script type="text/javascript" src="./javascripts/action.js"></script>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/deco.css">
 </head>
 <body>
 <div id="wrapper">
@@ -32,7 +33,9 @@
                 <img src="./images/earth2.png" class="nav_photo">
                 <p class="img_caption">Maps</p>
             </a>
-            <a href="#top" id="title_logo"><img src="./images/title_logo_picto2.png" id="title_image" class="nav_photo"/></a>
+            <a href="#top" id="title_logo">
+                <img src="./images/title_logo_picto2.png" id="title_image" class="nav_photo"/>
+            </a>
             <a href="#Journey">
                 <img src="./images/flag2.png" class="nav_photo">
                 <p class="img_caption">Journey</p>
@@ -64,119 +67,61 @@
                     Finally, on the last part 'about me', you can see the brief description of the website producer.
                 </p>
             </div>
-
-
         </div>
         <div class="common" id="Maps">
             <h1>Maps</h1>
             <div class="Map_img">
                 <img src="./images/worldmap.png" />
-                <div class="flag_img">
-                    <img src="./images/flag2_shadow.png" class="flag_mark" id="korea"/><p id="korea">KOREA</p>
-                </div>
-                <div class="flag_img">
-                    <img src="./images/flag2_shadow.png" class="flag_mark" id="japan"/><p id="japan">JAPAN</p>
-                </div>
-                <div class="flag_img">
-                    <img src="./images/flag2_shadow.png" class="flag_mark" id="taiwan"/><p id="taiwan">TAIWAN</p>
-                </div>
-                <div class="flag_img">
-                    <img src="./images/flag2_shadow.png" class="flag_mark" id="nepal"/><p id="nepal">NEPAL</p>
-                </div>
-                <div class="flag_img">
-                    <img src="./images/flag2_shadow.png" class="flag_mark" id="mongol"/><p id="mongol">MONGOLIA</p>
-                </div>
-                <div class="flag_img">
-                    <img src="./images/flag2_shadow.png" class="flag_mark" id="singapore"/><p id="singapore">SINGAPORE</p>
-                </div>
-                <div class="flag_img">
-                    <img src="./images/flag2_shadow.png" class="flag_mark" id="malay"/><p id="malay">MALAYSIA</p>
-                </div>
-                <div class="flag_img">
-                    <img src="./images/flag2_shadow.png" class="flag_mark" id="australia"/><p id="australia">AUSTRALIA</p>
-                </div>
+                <% nations.forEach(function(nation){ %>
+                    <div class="flag_img">
+                        <img src="./images/flag2_shadow.png" class="flag_mark" id="<%= nation.full %>"/>
+                        <p id="<%= nation.full %>"><%= nation.full.toUpperCase() %></p>
+                    </div>
+                <% }) %>
             </div>
             <div class="small_description">
                 <img src="./images/flag2.png" class="flag_mark" id="des">
                 <p> : The country where I had been</p>
             </div>
         </div>
-
         <div class="common" id="Journey">
             <h1>Journey</h1>
             <p class="blinkEle">click each flags!</p>
             <div class="journey_image">
+                <img src="./images/road.png" id="road">
                 <img src="./images/person.png" id="moving_person">
-
                 <div id="journey_icon">
                     <img src="./images/flag2.png" id="first_flag">
-                    <img src="./images/flag2.png">
-                    <img src="./images/flag2.png">
-                    <img src="./images/flag2.png">
-                    <img src="./images/flag2.png">
-                    <img src="./images/flag2.png">
-                    <img src="./images/flag2.png">
-                    <img src="./images/flag2.png">
+                    <% for(var i = 0; i < nations.length - 1 ; i++){ %>
+                        <img src="./images/flag2.png">
+                    <% } %>
                 </div>
-
-                <img src="./images/road.png" id="road">
             </div>
 
-            <center>
-                <div class="album">
-                    2016 - Korea
-                    <ul class="row first">
-                    </ul>
-                </div>
-                <div class="album">
-                    2017 - Taiwan
-                    <ul class="row first">
-                    </ul>
-                </div>
-                <div class="album">
-                    2017 - Japan
-                    <ul class="row first">
-                    </ul>
-                </div>
-                <div class="album">
-                    2018 - Nepal
-                    <ul class="row first">
-                    </ul>
-                </div>
-                <div class="album">
-                    2018 - Mongolia
-                    <ul class="row first">
-                    </ul>
-                </div>
-                <div class="album">
-                    2018 - Singapore
-                    <ul class="row first">
-                    </ul>
-                </div>
-
-                <div class="album">
-                    2019 - Malaysia
-                    <ul class="row first">
-                    </ul>
-                </div>
-                <div class="album">
-                    2019 - Australia
-                    <ul class="row first">
-                    </ul>
-                </div>
-            </center>
+            <div style="text-align: center;">
+                <% nations.forEach(function(nation){ %>
+                    <div class="album">
+                        <%
+                            function capitalizeFirstLetter(string) {
+                                return string.charAt(0).toUpperCase() + string.slice(1);
+                            }
+                        %>
+                        <%= `${nation.year} - ${capitalizeFirstLetter(nation.full)}` %>
+                        <ul class="row first">
+                        </ul>
+                    </div>
+                <% }) %>
+            </div>
         </div>
-
-
         <div class="common" id="About-me">
             <h1>About me</h1>
             <img src="./images/hwangse-logo_trans.png">
             <center>
-                <p id="small">
+                <p id="small" style="display: block">
                     Exploring the world<br/>
                     with passion, composure, and vision
                 </p>
-                <p>
+                <p style="display: block">
                     Name : Sehyun Hwang<br/>
                     School : Sogang University, Seoul, Korea<br/>
                     Major : Computer Science & Engineering<br/>
@@ -184,81 +129,8 @@
                     Github : <a style="color:#30b5a8;"href="https://github.com/hwangse">https://github.com/hwangse</a><br/>
                 </p>
             </center>
-
         </div>
     </article>
 </div>
 </body>
-
-<link rel="stylesheet" type="text/css" href="./plugin/jquery.bsPhotoGallery.css">
-<script type="text/javascript" src="./plugin/jquery.bsPhotoGallery.js"></script>
-<script type="text/javascript">
-    function initializePhotoGallery() {
-        $('ul.first').bsPhotoGallery({
-            "classes" : "col-3 col-lg-3 col-md-3 col-sm-3",
-            "hasModal" : true,
-            "shortText" : false,
-            // "style:transform: rotate(90deg);"
-        });
-    };
-    initializePhotoGallery();
-
-    var nationMap = {
-        0: "kor",
-        1: "tai",
-        2: "jap",
-        3: "nep",
-        4: "mong",
-        5: "sing",
-        6: "mal",
-        7: "aus"
-    }
-
-    $(document).ready(function(){
-        $("#Journey #journey_icon img").click(function(){
-            var idx = $(this).index();
-
-            $("#Journey .album").css("display","none")
-                .eq(idx).css("display","block");
-
-            var selected = $("#Journey .album").eq(idx);
-            var ul = $(selected).find("ul")
-            ul.empty();
-            for(var i=1;i<=20;i++){
-                ul.append("<li><img alt='' src='./albums/"+nationMap[idx]+"/"+i+".jpg'></li>");
-            }
-            initializePhotoGallery();
-
-            var first=(($(window).width())/100)*10;
-            var pos_icon = $(this).position(); // returns an object with the attribute top and left
-            var pos_person=$("#moving_person").position();
-
-            var diff=(pos_icon.left+first)-pos_person.left;
-            $("#moving_person").animate({left: "+="+(diff)+"px"},500);
-
-        });
-
-        $("#main-image").hover(function(){
-                $("body").css({
-                    transition : 'background 0.6s ease-in-out',
-                    "background" : "#160d48"});		//dark blue
-                $("#navbar").css({
-                    transition : 'background 0.6s ease-in-out',
-                    "background" : "#160d48"});
-
-                $('#moving_img').fadeOut(500, function() {
-                    $('#moving_img').attr("src", "./images/star_moving.gif");
-                    $('#moving_img').fadeIn(500);
-                });
-            },
-            function(){
-                $("body").css("background", "#30b5a8");		//sky blue
-                $("#navbar").css("background","#30b5a8");
-                $('#moving_img').fadeOut(500, function() {
-                    $('#moving_img').attr("src", "./images/cloud_moving.gif");
-                    $('#moving_img').fadeIn(500);
-                });
-            });
-    });
-</script>
 </html>

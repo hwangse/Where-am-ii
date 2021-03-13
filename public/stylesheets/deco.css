@@ -104,7 +104,7 @@
 		top: 11vw;
     	left: 45vw;
 	}
-	#Maps .Map_img .flag_img #mongol{
+	#Maps .Map_img .flag_img #mongolia{
 		top: 7vw;
     	left: 48vw;
 	}
@@ -112,13 +112,17 @@
 		top: 17vw;
     	left: 49vw;
 	}
-	#Maps .Map_img .flag_img #malay{
+	#Maps .Map_img .flag_img #malaysia{
 		top: 15vw;
     	left: 48vw;
 	}
 	#Maps .Map_img .flag_img #australia{
 		top: 24.5vw;
     	left: 55.5vw;
+	}
+	#Maps .Map_img .flag_img #usa{
+		top: 8.5vw;
+		left: 10.5vw;
 	}
 	#Maps .small_description{
 		position:relative;
@@ -224,6 +228,7 @@
 		visibility: hidden;
 		color : #fcedb1;
 		font-family: bubble;
+		font-size: 1.2vw;
 		position:relative;
 		top : -7vw;
 		/*color:#ef5285; This is pink color*/
@@ -284,7 +289,7 @@
 	#intro #paragraph{
 		padding: 2vw 2vw 1vw 2vw;
 		transition: background 0.3s ease-in-out;
-		border-radius: 1vw;
+		border-radius: 2vw;
 		text-indent: 1rem;
 
 	}
@@ -445,7 +450,7 @@
 		}
 		#Journey #journey_icon{
 
-			left:14vw;
+			left:10vw;
 			top:4.8vw;
 		}
 		#Journey #road{
