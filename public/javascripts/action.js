@@ -27,7 +27,7 @@ $(document).ready(function () {
         $("#Journey .album").css("display", "none").eq(idx).css("display", "block");
 
         var selected = $("#Journey .album").eq(idx);
-        var ul = $(selected).find("ul")
+        var ul = $(selected).find("ul");
         ul.empty();
         for (var i = 1; i <= 20; i++) {
             ul.append("<li><img alt='' src='./albums/" + nationMap[idx] + "/" + i + ".jpg'></li>");
@@ -41,7 +41,6 @@ $(document).ready(function () {
 
         var diff = (pos_icon.left + first) - pos_person.left;
         $("#moving_person").animate({left: "+=" + (diff) + "px"}, 500);
-
     });
 
     $("#main-image").hover(function () {

@@ -321,6 +321,7 @@
 		text-align: justify;
 		padding-left:2vw;
 		font-size: 0.9rem;
+		display: inline-block;
 	}
 	#About-me #small{
 		font-size: 0.8rem;
